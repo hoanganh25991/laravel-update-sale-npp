@@ -18,3 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::post('upload/category-product', 'UploadCategoryProduct@load');
+
+Route::get('upload/category-product', function(){
+    return "adsfasdf";
+});
