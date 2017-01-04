@@ -9,7 +9,8 @@ class Category extends Model{
     use ModelCode;
 
     protected $table = 'categories';
-    protected $fillable = ['code', 'name'];
+    protected $fillable = ['name'];
+    protected $guarded = ['code'];
 
     public function __construct(array $attributes = []){
         parent::__construct($attributes);
